@@ -1,22 +1,14 @@
 
 let p = document.querySelector(".time");
       
-function clock() {
-  let date_time = new Date();
-  let hr = date_time.getHours();
-  let min = date_time.getMinutes();
-  let sec = date_time.getSeconds();
-  let date = date_time.getDate();
-  count++;
-  p.innerHTML = `${hr}:${min}:${sec}:${date}`;
-}
+
 
 
 
 
 let [seconds, minutes, hours] = [0, 0, 0];
 let time = document.querySelector(".time1");
-time.innerHTML = " 00 : 00 : 00";
+time.innerHTML = "00:00:00";
 let int = null;
 let btns = document.querySelectorAll("button");
 btns[1].disabled = true;
