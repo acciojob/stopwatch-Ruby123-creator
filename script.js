@@ -1,4 +1,3 @@
-//your code here
 
 let p = document.querySelector(".time");
       
@@ -57,16 +56,22 @@ btns[2].disabled = true;
 
 function displayTimer(){
 
-  seconds++;
+  seconds += 01;
   if(seconds == 60){
-      seconds = 0;
-      minutes++;
+      seconds = 00;
+      minutes += 01;
       if(minutes == 60){
-          minutes = 0;
-          hours++;
+          minutes = 00;
+          hours +=01;
       }
   }
+  if(seconds<10){
+  time.innerHTML = `0${hours}:0${minutes}:0${seconds}`;
+  
+  }
+  else{
+    time.innerHTML = `0${hours}:0${minutes}:${seconds}`;
 
-  time.innerHTML = `${hours}:${minutes}:${seconds}`;
+  }
 }
 
