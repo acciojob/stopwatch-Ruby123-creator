@@ -40,7 +40,7 @@ btns[1].addEventListener("click", () => {
 btns[2].addEventListener("click", () => {
   clearInterval(int);
   [seconds, minutes, hours] = [0, 0, 0];
-  time.innerHTML = "00 : 00 : 00 ";
+  time.innerHTML = "00:00:00";
   btns[0].disabled = false;
     btns[1].disabled = true;
 btns[2].disabled = true;
